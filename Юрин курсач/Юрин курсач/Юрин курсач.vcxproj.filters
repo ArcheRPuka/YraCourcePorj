@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\FON1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\ind_st0.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\ind_st1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\ind_st2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\kazarma_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\kazarma_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\kazarma_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\krepost_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\krepost_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\krepost_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\market.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_game.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_nv.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_s.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_s_y.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_v_m.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_v_z.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_x_n.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_x1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_x2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_xod1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_xod2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Menu_xod3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mine-1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mine-2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mine-3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_0_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_0_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_0_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_1_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_1_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_1_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_2_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_2_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_2_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_3_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_3_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_3_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_4_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_4_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_4_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_5_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_5_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_5_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_6_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_6_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_6_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_7_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_7_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_7_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_8_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_8_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_8_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_9_1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_9_2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\mv_9_3.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Otdel_yr.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_kaz0.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_kaz1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_krep0.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_krep1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_mark0.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_mark1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_mine0.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\st_mine1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Str_d.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_g11.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_g12.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_g21.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_g22.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_r11.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_r12.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_r21.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\str_r22.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="textures\Str_u.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="map.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="text.ttf" />
+  </ItemGroup>
+</Project>
