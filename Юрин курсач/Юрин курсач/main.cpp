@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include "SDL.h" 
-//#include "SDL_ttf.h"
+#include "SDL_ttf.h"
 
 #include <math.h>
 #include <stdio.h> 
