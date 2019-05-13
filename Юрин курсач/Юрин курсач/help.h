@@ -7,11 +7,13 @@ struct Resyrs
 {
 	int gold; int eat; int metl;
 };
+
 //строения на карте
 struct Stroenie
 {
 	int market; int kazarm; int krepoct; int mine;
 };
+
 //воины на карте
 typedef struct Voin
 {
@@ -20,3 +22,5 @@ typedef struct Voin
 
 //Drawing functions
 void kartinka_start_menu(SDL_Window* window, SDL_Renderer* &renderer);		//отрисовка стартового меню
+
+void kartinka_start(SDL_Window* window, SDL_Renderer* &renderer);			//отрисовка игрового меню

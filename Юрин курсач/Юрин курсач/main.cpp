@@ -1,5 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 
-
+#define _CRT_SECURE_NO_WARNINGS /*itoa пофиксить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 #include <math.h>
 #include <stdio.h> 
@@ -10,17 +9,6 @@
 #include "help.h"
 
 
-//отрисовка игрового меню
-void kartinka_start(SDL_Window* window, SDL_Renderer* &renderer)
-{
-	SDL_Surface *myImage = SDL_LoadBMP("textures/Menu_game.bmp");
-	SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 2, 2, 2));
-	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
-	SDL_Rect rect = { 0,0,1280,720 };
-	SDL_RenderCopy(renderer, texture, NULL, &rect);
-	SDL_FreeSurface(myImage);
-	SDL_DestroyTexture(texture);
-}
 /*ф-я вычисляет знакоместо для коректного вывода цифр
 принимаем число k - кол-во любого ресурса*/
 int znakomesto(int k)
