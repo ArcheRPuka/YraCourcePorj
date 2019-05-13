@@ -5,33 +5,7 @@
 
 #include "help.h"
 
-//ф-я создает ромб из координаты x и y размером t
-void romb(SDL_Renderer*renderer, SDL_Rect rect, int t, int k)
-{
-	int r, g, b;
-	switch (k)
-	{
-	case(1): {r = 255;	g = 0;	  b = 0;   break; }	//красный
-	case(2): {r = 0;	g = 255;  b = 0;   break; }	//зеленый
-	case(3): {r = 0;	g = 0;	  b = 255; break; }	//синий
-	case(4): {r = 255;	g = 128;  b = 0;   break; }	//оранжевый
-	case(5): {r = 255;	g = 0;	  b = 170; break; }	//розовый
-	case(6): {r = 170;	g = 0;	  b = 255; break; }	//фиолетовый
-	case(7): {r = 255;	g = 128;  b = 255; break; }	//бледно розовый
-	case(8): {r = 128;	g = 255;  b = 255; break; }	//бирюзовый
-	case(9): {r = 255;	g = 255;  b = 128; break; }	//желтый
-	case(10):{r = 0;	g = 0;	  b = 0;   break; }	//1
-	default: {r = 128;	g = 128;  b = 128; break; }
-	}
-	SDL_SetRenderDrawColor(renderer, r, g, b, 0);
-	for (int i = 0; i < t; i++)
-	{
-		SDL_RenderDrawLine(renderer, rect.x, rect.y, rect.w, rect.h);
-		rect.x++;
-		rect.y++;
-		rect = { rect.x,rect.y,rect.x + t,rect.y - t };
-	}
-}
+
 //создает игровое поле 
 //t-постоянное координатное число
 void map_ren(SDL_Window* window, SDL_Renderer* renderer, int t, int colr[])

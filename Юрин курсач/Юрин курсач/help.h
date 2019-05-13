@@ -31,3 +31,4 @@ int znakomesto(int k);	//вычисляет знакоместо для коректного вывода цифр
 void kartinka_start_menu(SDL_Window* window, SDL_Renderer* &renderer);		//отрисовка стартового меню
 void kartinka_start(SDL_Window* window, SDL_Renderer* &renderer);			//отрисовка игрового меню
 void pokaz_4icel(SDL_Window*window, SDL_Renderer* &renderer, int k, int i);	//отрисовка цифр на игровом меню
+void romb(SDL_Renderer*renderer, SDL_Rect rect, int t, int k);				//ф-я создает ромб из координаты x и y размером t
