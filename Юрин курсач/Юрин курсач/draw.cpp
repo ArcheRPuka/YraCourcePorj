@@ -1,7 +1,4 @@
 #include "help.h"
-//#define _CRT_SECURE_NO_WARNINGS 
-
-/*itoa пофиксить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 //отрисовка стартового меню
 void kartinka_start_menu(SDL_Window* window, SDL_Renderer* &renderer)
@@ -37,7 +34,6 @@ void pokaz_4icel(SDL_Window*window, SDL_Renderer* &renderer, int k, int i)
 	a = 6 - b;
 	char *text = new char[10];
 	_itoa_s(k, text, 10, 10);
-	//_itoa(k, text, 10);
 
 	TTF_Init();
 	TTF_Font* my_font = TTF_OpenFont("Text.ttf", 100);

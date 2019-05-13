@@ -5,26 +5,6 @@
 
 #include "help.h"
 
-
-//создает игровое поле 
-//t-постоянное координатное число
-void map_ren(SDL_Window* window, SDL_Renderer* renderer, int t, int colr[])
-{
-	FILE*tf;
-	int map[1000][2];
-	int kol;
-	fopen_s(&tf, "map.txt", "r");
-	fscanf_s(tf, "%d", &kol);
-	for (int j = 1; j <= kol; j++)
-		fscanf_s(tf, "%d %d ", &map[j][0], &map[j][1]);
-
-	fclose(tf);
-	for (int j = 1; j <= kol; j++)
-	{
-		SDL_Rect rect = { map[j][0] , map[j][1] , map[j][0] + t , map[j][1] - t };
-		romb(renderer, rect, t, colr[j]);
-	}
-}
 //обводит выбранный часть карты 
 void obvodka(SDL_Renderer* renderer, int x, int y, int t)
 {
