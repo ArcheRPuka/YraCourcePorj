@@ -102,17 +102,17 @@ void romb(SDL_Renderer*renderer, SDL_Rect rect, int t, int k)
 	int r, g, b;
 	switch (k)
 	{
-	case(1): {r = 255; g = 0; b = 0; break; }//красный
-	case(2): {r = 0; g = 255; b = 0; break; }//зеленый
-	case(3): {r = 0; g = 0; b = 255; break; }//синий
-	case(4): {r = 255; g = 128; b = 0; break; }//оранжевый
-	case(5): {r = 255; g = 0; b = 170; break; }//розовый
-	case(6): {r = 170; g = 0; b = 255; break; }//фиолетовый
-	case(7): {r = 255; g = 128; b = 255; break; }//бледно розовый
-	case(8): {r = 128; g = 255; b = 255; break; }//бирюзовый
-	case(9): {r = 255; g = 255; b = 128; break; }//желтый
-	case(10): {r = 0; g = 0; b = 0; break; }//1
-	default: {r = 128; g = 128; b = 128; break; }
+	case(1): {r = 255;	g = 0;		b = 0;	 break; }//красный
+	case(2): {r = 0;	g = 255;	b = 0;	 break; }//зеленый
+	case(3): {r = 0;	g = 0;		b = 255; break; }//синий
+	case(4): {r = 255;	g = 128;	b = 0;	 break; }//оранжевый
+	case(5): {r = 255;	g = 0;		b = 170; break; }//розовый
+	case(6): {r = 170;	g = 0;		b = 255; break; }//фиолетовый
+	case(7): {r = 255;	g = 128;	b = 255; break; }//бледно розовый
+	case(8): {r = 128;	g = 255;	b = 255; break; }//бирюзовый
+	case(9): {r = 255;	g = 255;	b = 128; break; }//желтый
+	case(10): {r = 0;	g = 0;		b = 0;	 break; }//1
+	default: {r = 128;	g = 128;	b = 128; break; }
 	}
 	SDL_SetRenderDrawColor(renderer, r, g, b, 0);
 	for (int i = 0; i < t; i++)
@@ -168,7 +168,7 @@ void ind_sost(SDL_Renderer* renderer, int k, int r)
 	cord_color[8] = { 1237,470,8,8 };
 	if (r == 0)
 	{
-		SDL_Surface *myImage = SDL_LoadBMP("ind_st0.bmp");
+		SDL_Surface *myImage = SDL_LoadBMP("textures/ind_st0.bmp");
 		SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 0, 0, 0));
 		SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
 		SDL_RenderCopy(renderer, texture, NULL, &cord_color[k]);
@@ -177,7 +177,7 @@ void ind_sost(SDL_Renderer* renderer, int k, int r)
 	}
 	if (r == 1)
 	{
-		SDL_Surface *myImage = SDL_LoadBMP("ind_st1.bmp");
+		SDL_Surface *myImage = SDL_LoadBMP("textures/ind_st1.bmp");
 		SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 0, 0, 0));
 		SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
 		SDL_RenderCopy(renderer, texture, NULL, &cord_color[k]);
@@ -186,7 +186,7 @@ void ind_sost(SDL_Renderer* renderer, int k, int r)
 	}
 	if (r == 2)
 	{
-		SDL_Surface *myImage = SDL_LoadBMP("ind_st2.bmp");
+		SDL_Surface *myImage = SDL_LoadBMP("textures/ind_st2.bmp");
 		SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 0, 0, 0));
 		SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
 		SDL_RenderCopy(renderer, texture, NULL, &cord_color[k]);
