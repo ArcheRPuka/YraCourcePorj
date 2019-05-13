@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 
-#include "SDL.h" 
-#include "SDL_ttf.h"
+
 
 #include <math.h>
 #include <stdio.h> 
@@ -8,32 +7,9 @@
 #include <locale.h> 
 #include <time.h>
 
-//хранит кол-во ресурсов
-struct Resyrs
-{
-	int gold; int eat; int metl;
-};
-//строения на карте
-struct Stroenie
-{
-	int market; int kazarm; int krepoct; int mine;
-};
-//воины на карте
-typedef struct Voin
-{
-	int bronz; int serebr; int gold;
-}voin;
-//отрисовка стартового меню
-void kartinka_start_menu(SDL_Window* window, SDL_Renderer* &renderer)
-{
-	SDL_Surface *myImage = SDL_LoadBMP("textures/FON1.bmp");
-	SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 0, 0, 0));
-	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
-	SDL_Rect rect = { 0,0,1280,720 };
-	SDL_RenderCopy(renderer, texture, NULL, &rect);
-	SDL_FreeSurface(myImage);
-	SDL_DestroyTexture(texture);
-}
+#include "help.h"
+
+
 //отрисовка игрового меню
 void kartinka_start(SDL_Window* window, SDL_Renderer* &renderer)
 {

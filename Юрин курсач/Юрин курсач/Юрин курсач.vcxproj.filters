@@ -18,6 +18,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\FON1.bmp">
@@ -254,5 +257,10 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="text.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="help.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
