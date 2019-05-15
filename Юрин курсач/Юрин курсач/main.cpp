@@ -14,6 +14,15 @@ void obvodka(SDL_Renderer* renderer, int x, int y, int t)
 	SDL_RenderDrawLine(renderer, x + t, y - t, x + t + t, y);
 	SDL_RenderDrawLine(renderer, x + t, y + t, x + t + t, y);
 }
+//рисует заготовка дл€ показа населени€
+void gorod(SDL_Renderer* &renderer)
+{
+	SDL_Rect cord = { 1130,516,141,43 };
+	SDL_Surface *myImage = SDL_LoadBMP("textures/Gorod.bmp");
+	SDL_SetColorKey(myImage, SDL_TRUE, SDL_MapRGB(myImage->format, 255, 0, 0));
+	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, myImage);
+	SDL_RenderCopy(renderer, texture, NULL, &cord);
+}
 //индикатор состо€ни€, k-номер игрока r-состо€ние
 void ind_sost(SDL_Renderer* renderer, int k, int r)
 {
@@ -1037,6 +1046,7 @@ int main(int argc, char** argv)
 	SDL_Window* window = SDL_CreateWindow(u8"»√–ј", 7, 29, 1280, 720, SDL_WINDOW_SHOWN);
 	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 1);
 	SDL_Event event;
+	srand(time(NULL));
 	//посто€нное коорд число
 	int t = 50;
 	//координаты карты////////////////////////////////////////
@@ -1111,6 +1121,15 @@ int main(int argc, char** argv)
 				}
 				colr[1] = 1; colr[10] = 2; colr[20] = 3; colr[30] = 4; colr[26] = 5; colr[50] = 6;
 				colr[60] = 7; colr[5] = 8; colr[14] = 9; colr[34] = 10;
+				//городское население
+				int gor_nas[100];
+				for (int i = 1; i < kol; i++)
+				{
+					do
+					{
+						gor_nas[i] = rand();
+					} while (gor_nas[i] > 800 || gor_nas[i] < 200);
+				}
 				//игровой цикл/////////////////////////////
 				while (!quit)
 				{
@@ -1555,6 +1574,9 @@ int main(int argc, char** argv)
 						}
 						if (close != 0)
 						{
+							//показ городского начелени€
+							gorod(renderer);
+							pokaz_4icel(window, renderer, gor_nas[close], 9);
 							if (sost == 5)
 								Menu_obchenia(renderer, 14, Player_st[close].market, Player_st[close].kazarm, Player_st[close].krepoct, Player_st[close].mine);
 							//выделение игровой области

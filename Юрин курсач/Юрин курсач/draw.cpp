@@ -56,6 +56,8 @@ void pokaz_4icel(SDL_Window*window, SDL_Renderer* &renderer, int k, int i)
 	rect[7] = { 300 + 20 * a,645,20 * b,45 };
 	//отправить выбор
 	rect[8] = { 172 + 20 * a,645,20 * b,45 };
+	//gorod nasel
+	rect[9] = { 1130 + 23 * a,516,23 * b,40 };
 	SDL_Surface* textSurface = NULL;
 	textSurface = TTF_RenderText_Shaded(my_font, text, fore_color, back_color);
 	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, textSurface);
@@ -92,5 +94,26 @@ void romb(SDL_Renderer*renderer, SDL_Rect rect, int t, int k)
 		rect.x++;
 		rect.y++;
 		rect = { rect.x,rect.y,rect.x + t,rect.y - t };
+	}
+}
+
+//создает игровое поле 
+//t-постоянное координатное число
+void map_ren(SDL_Window* window, SDL_Renderer* renderer, int t, int colr[])
+{
+	FILE*tf;
+	int map[1000][2];
+	int kol;
+	fopen_s(&tf, "map.txt", "r");
+	fscanf_s(tf, "%d", &kol);
+	for (int j = 1; j <= kol; j++)
+	{
+		fscanf_s(tf, "%d %d ", &map[j][0], &map[j][1]);
+	}
+	fclose(tf);
+	for (int j = 1; j <= kol; j++)
+	{
+		SDL_Rect rect = { map[j][0] , map[j][1] , map[j][0] + t , map[j][1] - t };
+		romb(renderer, rect, t, colr[j]);
 	}
 }
